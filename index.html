@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SPX GRU Returns Predictor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>SPX GRU Returns Predictor</h1>
+      <p>Historical SPX prices + GRU model in TensorFlow.js + "Predict Tomorrow"</p>
+    </header>
+
+    <main>
+      <section class="panel">
+        <div class="controls">
+          <button id="predictBtn" disabled>Predict Tomorrow</button>
+          <span id="status">Loading model & data…</span>
+        </div>
+
+        <div class="chart-container">
+          <canvas id="priceChart"></canvas>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>GitHub Pages · TF.js GRU model</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
