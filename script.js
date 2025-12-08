@@ -1,6 +1,6 @@
 // ===== CONFIG =====
 
-const MODEL_URL   = "model/model.json";
+const MODEL_URL   = "https://raw.githubusercontent.com/olesiakocheva/final_project/main/model/model.json";
 const SCALER_URL  = "model/scaler_config_returns.json";
 const HISTORY_URL = "data/history_returns.json";
 
